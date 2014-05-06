@@ -1,0 +1,21 @@
+<html>
+<head>
+	<script src="http://cdn.bootcss.com/d3/3.4.6/d3.min.js"></script>
+	<script src="http://cdn.bootcss.com/knockout/3.1.0/knockout-min.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+	<div>
+		<button data-bind="click:addRect">Add</button>
+		<div data-bind="foreach: rects">
+			x:<input data-bind="value: x" size="6"/>
+			y:<input data-bind="value: y" size="6"/>
+			w:<input data-bind="value: w" size="6"/>
+			h:<input data-bind="value: h" size="6"/>
+			<br/>
+		</div>
+	</div>
+	<svg id="svg" width="500px" height="500px"/>
+
+</body>
+</html>
